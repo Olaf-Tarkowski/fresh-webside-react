@@ -113,7 +113,7 @@ const Cards = () => {
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1400,
         settings: {
           slidesToShow: 2,
         },
