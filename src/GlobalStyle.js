@@ -12,6 +12,6 @@ html {
 body {
   background-color: #fff;
   margin: auto;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 `;
