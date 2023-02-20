@@ -7,7 +7,6 @@ const Container = styled.div`
   padding-top: 244px;
   margin: auto;
   max-width: 1562px;
-  font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 200;
   font-size: 17px;
   color: #000;
