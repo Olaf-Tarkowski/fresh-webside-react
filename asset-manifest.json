@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fresh-webside-react/static/css/main.077ebecc.css",
-    "main.js": "/fresh-webside-react/static/js/main.1502b0c8.js",
+    "main.js": "/fresh-webside-react/static/js/main.edefa253.js",
     "static/js/787.b4be1a4c.chunk.js": "/fresh-webside-react/static/js/787.b4be1a4c.chunk.js",
     "static/media/Video.png": "/fresh-webside-react/static/media/Video.391e2eb333b142cc1837.png",
     "static/media/RightImg.png": "/fresh-webside-react/static/media/RightImg.eabfa53c425e30782b8c.png",
@@ -35,11 +35,11 @@
     "static/media/Arrow.svg": "/fresh-webside-react/static/media/Arrow.3fc95f25dee6e02d4e3c0a7a29642dba.svg",
     "static/media/BlueCircle.svg": "/fresh-webside-react/static/media/BlueCircle.1dd6d0eeed17516f03ad15926480fc3d.svg",
     "main.077ebecc.css.map": "/fresh-webside-react/static/css/main.077ebecc.css.map",
-    "main.1502b0c8.js.map": "/fresh-webside-react/static/js/main.1502b0c8.js.map",
+    "main.edefa253.js.map": "/fresh-webside-react/static/js/main.edefa253.js.map",
     "787.b4be1a4c.chunk.js.map": "/fresh-webside-react/static/js/787.b4be1a4c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.077ebecc.css",
-    "static/js/main.1502b0c8.js"
+    "static/js/main.edefa253.js"
   ]
 }
