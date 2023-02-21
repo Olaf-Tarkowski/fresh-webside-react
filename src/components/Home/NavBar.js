@@ -10,18 +10,21 @@ import blue from "../../resources/icons/Blue.svg";
 
 const Background = styled.div`
   background-color: #312477;
-  height: 600px;
+  height: 571px;
 
   @media (min-width: 576px) {
-    height: 600px;
+    height: 544px;
+  }
+  @media (min-width: 768px) {
+    height: 574px;
   }
   @media (min-width: 992px) {
-    height: 650px;
+    height: 644px;
   }
-  @media (min-width: 1300px) {
+  @media (min-width: 1400px) {
     height: 700px;
   }
-  @media (min-width: 1700px) {
+  @media (min-width: 1600px) {
     height: 820px;
   }
 `;
@@ -104,19 +107,9 @@ const Section = styled.section`
   padding-top: 95px;
   margin: auto;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  max-width: 400px;
   color: #fff;
-
-  @media (min-width: 610px) {
-    max-width: 500px;
-  }
-  @media (min-width: 765px) {
-    max-width: 580px;
-  }
-  @media (min-width: 992px) {
-    max-width: 1300px;
-  }
 `;
 
 const SmallContainer = styled.div`
@@ -125,6 +118,28 @@ const SmallContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+
+const Test = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+
+  @media (min-width: 576px) {
+    width: 480px;
+  }
+  @media (min-width: 768px) {
+    width: 580px;
+  }
+  @media (min-width: 992px) {
+    width: 800px;
+  }
+  @media (min-width: 1400px) {
+    width: 1000px;
+  }
+  @media (min-width: 1600px) {
+    width: 1300px;
+  }
 `;
 
 const Text = styled.div`
@@ -138,8 +153,13 @@ const Heading = styled.div`
   font-weight: bold;
   font-size: 30px;
   line-height: 50px;
+
   @media (min-width: 576px) {
-    font-size: 35px;
+    font-size: 26px;
+    line-height: 48px;
+  }
+  @media (min-width: 992px) {
+    font-size: 32px;
     line-height: 52px;
   }
   @media (min-width: 1400px) {
@@ -158,7 +178,25 @@ const SmallText = styled.div`
   padding-right: 30px;
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+  width: 400px;
+
+  @media (min-width: 576px) {
+    width: 480px;
+  }
+  @media (min-width: 768px) {
+    width: 580px;
+  }
+  @media (min-width: 992px) {
+    width: 800px;
+  }
+  @media (min-width: 1400px) {
+    width: 1000px;
+  }
+  @media (min-width: 1600px) {
+    width: 1300px;
+  }
+`;
 
 const TextBox = styled.div`
   display: flex;
@@ -182,18 +220,27 @@ const SmallDonutSvg = styled.img`
   left: 100%;
   filter: invert(64%) sepia(46%) saturate(3064%) hue-rotate(330deg)
     brightness(100%) contrast(101%);
+  left: 200px;
 
+  @media (min-width: 576px) {
+    width: 60px;
+    left: 240px;
+  }
   @media (min-width: 768px) {
     width: 70px;
-    height: auto;
+    left: 290px;
   }
   @media (min-width: 992px) {
-    width: 100px;
-    height: auto;
+    width: 90px;
+    left: 400px;
   }
-  @media (min-width: 1500px) {
+  @media (min-width: 1400px) {
+    width: 115px;
+    left: 500px;
+  }
+  @media (min-width: 1600px) {
     width: 148px;
-    height: auto;
+    left: 650px;
   }
 `;
 
@@ -201,23 +248,34 @@ const BlueSvg = styled.img`
   width: 50px;
   height: auto;
   position: absolute;
-  bottom: 53px;
-  right: 100%;
+  width: 50px;
+  bottom: 50px;
+  right: 200px;
 
+  @media (min-width: 576px) {
+    width: 60px;
+    right: 240px;
+    bottom: 60px;
+  }
   @media (min-width: 768px) {
     width: 70px;
-    height: auto;
-    bottom: 80px;
+    right: 290px;
+    bottom: 70px;
   }
   @media (min-width: 992px) {
     width: 90px;
-    height: auto;
-    bottom: 100px;
+    right: 400px;
+    bottom: 90px;
   }
-  @media (min-width: 1500px) {
+  @media (min-width: 1400px) {
+    width: 115px;
+    right: 500px;
+    bottom: 113px;
+  }
+  @media (min-width: 1600px) {
     width: 116px;
-    height: auto;
-    bottom: 114px;
+    right: 650px;
+    bottom: 113px;
   }
 `;
 
@@ -226,22 +284,27 @@ const OrangeSvg = styled.img`
   height: auto;
   position: absolute;
   bottom: 0;
-  left: -100px;
+  right: 260px;
 
+  @media (min-width: 576px) {
+    width: 60px;
+    right: 300px;
+  }
   @media (min-width: 768px) {
     width: 70px;
-    height: auto;
-    left: -150px;
+    right: 380px;
   }
   @media (min-width: 992px) {
     width: 90px;
-    height: auto;
-    left: -200px;
+    right: 504px;
   }
-  @media (min-width: 1500px) {
+  @media (min-width: 1400px) {
+    width: 115px;
+    right: 644px;
+  }
+  @media (min-width: 1600px) {
     width: 116px;
-    height: auto;
-    left: -310px;
+    right: 844px;
   }
 `;
 
@@ -273,15 +336,17 @@ function NavBar() {
           </Col>
           <Col lg={8} lgOffset={2}>
             <Section>
-              <Text>Lorem Ipsum has been the industry’s standard</Text>
-              <SmallContainer>
-                <Heading>Lorem Ipsum is simply dummy text</Heading>
-                <TextBox>
-                  <SmallText>Play video</SmallText>
-                  <Svg src={play} />
-                </TextBox>
-                <SvgLine src={line} />
-              </SmallContainer>
+              <Test>
+                <Text>Lorem Ipsum has been the industry’s standard</Text>
+                <SmallContainer>
+                  <Heading>Lorem Ipsum is simply dummy text</Heading>
+                  <TextBox>
+                    <SmallText>Play video</SmallText>
+                    <Svg src={play} />
+                  </TextBox>
+                  <SvgLine src={line} />
+                </SmallContainer>
+              </Test>
               <Image src={video} />
               <SvgSection>
                 <SmallDonutSvg src={smallDonut} />
