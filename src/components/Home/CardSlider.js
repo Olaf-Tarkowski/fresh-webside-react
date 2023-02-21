@@ -14,7 +14,6 @@ const Container = styled.div`
 
 const Heading = styled.div`
   max-width: 845px;
-  max-height: 134px;
   font-family: "Space Grotesk", sans-serif;
   font-weight: bold;
   font-size: 50px;
