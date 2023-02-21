@@ -85,6 +85,7 @@ const Heading = styled.div`
 
 const Text = styled.div`
   font-size: 18px;
+  font-weight: 300;
   line-height: 28px;
   padding-bottom: 46px;
 `;

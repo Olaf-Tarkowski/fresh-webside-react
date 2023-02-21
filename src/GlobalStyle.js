@@ -13,5 +13,6 @@ body {
   background-color: #fff;
   margin: auto;
   font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
 }
 `;

@@ -129,6 +129,7 @@ const SmallContainer = styled.div`
 
 const Text = styled.div`
   font-size: 18px;
+  font-weight: 300;
   line-height: 23px;
 `;
 

@@ -121,7 +121,7 @@ const Button = styled.button`
 const TelNumber = styled.a`
   text-decoration: none;
   font-family: "Space Grotesk", sans-serif;
-  font-weight: 200;
+  font-weight: 700;
   font-size: 30px;
   line-height: 40px;
   color: #ffffff;
@@ -130,6 +130,7 @@ const TelNumber = styled.a`
 const Mail = styled.a`
   font-family: "Space Grotesk", sans-serif;
   font-size: 30px;
+  font-weight: 700;
   line-height: 40px;
   color: #ff7d44;
 `;

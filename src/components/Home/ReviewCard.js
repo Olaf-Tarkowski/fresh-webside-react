@@ -31,6 +31,7 @@ const SmallSection = styled.div`
 
 const Rating = styled.div`
   font-size: 18px;
+  font-weight: 300;
   line-height: 28px;
   color: #312477;
 `;
@@ -74,6 +75,7 @@ const PersonSection = styled.div`
 const Box = styled.div`
   display: flex;
   align-items: center;
+  font-weight: 300;
 `;
 
 const Image = styled.img``;

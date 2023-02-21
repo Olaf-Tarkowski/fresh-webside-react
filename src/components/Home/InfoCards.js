@@ -29,6 +29,7 @@ const Date = styled.div`
   height: 33px;
   background: #f8f7ff;
   font-size: 11px;
+  font-weight: 300;
   line-height: 28px;
   border-radius: 17px;
 `;
@@ -45,6 +46,7 @@ const Text = styled.div`
   padding: 27px 0 48px;
   max-width: 422px;
   font-size: 18px;
+  font-weight: 300;
   line-height: 28px;
 `;
 
@@ -73,6 +75,7 @@ const ImgText = styled.div`
   padding: 0 20px;
   background: #ff7d44;
   font-size: 12px;
+  font-weight: 300;
   line-height: 31px;
   border-radius: 19px;
   color: #fff;
