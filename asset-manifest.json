@@ -1,12 +1,42 @@
 {
   "files": {
-    "main.js": "/fresh-webside-react/static/js/main.46df895a.js",
+    "main.css": "/fresh-webside-react/static/css/main.077ebecc.css",
+    "main.js": "/fresh-webside-react/static/js/main.a370bd41.js",
     "static/js/787.b4be1a4c.chunk.js": "/fresh-webside-react/static/js/787.b4be1a4c.chunk.js",
+    "static/media/Video.png": "/fresh-webside-react/static/media/Video.391e2eb333b142cc1837.png",
+    "static/media/RightImg.png": "/fresh-webside-react/static/media/RightImg.eabfa53c425e30782b8c.png",
+    "static/media/LeftImg.png": "/fresh-webside-react/static/media/LeftImg.c5a3cfa47de5b68c7458.png",
+    "static/media/Photo.png": "/fresh-webside-react/static/media/Photo.bab2a119b9de55b72853.png",
+    "static/media/Phone.svg": "/fresh-webside-react/static/media/Phone.47d7bc3603d019d4cca167d74765b756.svg",
+    "static/media/Line.svg": "/fresh-webside-react/static/media/Line.f0f3c8121bac5ac66dbbd5ab16c753dd.svg",
+    "static/media/TelMes.svg": "/fresh-webside-react/static/media/TelMes.4a0ff747644ed372f0bccd7a9ce2e0f0.svg",
+    "static/media/slick.svg": "/fresh-webside-react/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/fresh-webside-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/Envelope.svg": "/fresh-webside-react/static/media/Envelope.1eca11cff286464b86f3563bc7c22f63.svg",
+    "static/media/Note.svg": "/fresh-webside-react/static/media/Note.cde5fa46ae40a61bbac71f76def9fe87.svg",
+    "static/media/slick.ttf": "/fresh-webside-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/Instagram.svg": "/fresh-webside-react/static/media/Instagram.4d969dd141d389ed7a2fe7584b56d681.svg",
+    "static/media/Play.svg": "/fresh-webside-react/static/media/Play.5a9bb4ed9337df89c9651bab37ffbf1a.svg",
+    "static/media/slick.woff": "/fresh-webside-react/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/Coffee.svg": "/fresh-webside-react/static/media/Coffee.801c76f98912683195a9272c66844408.svg",
     "index.html": "/fresh-webside-react/index.html",
-    "main.46df895a.js.map": "/fresh-webside-react/static/js/main.46df895a.js.map",
+    "static/media/Quote.svg": "/fresh-webside-react/static/media/Quote.477007f7d075bc207b7a732042e5e88c.svg",
+    "static/media/Logo.svg": "/fresh-webside-react/static/media/Logo.17c5b41d7d9eb71c8cb11e6ef5f6cc8e.svg",
+    "static/media/Twitter.svg": "/fresh-webside-react/static/media/Twitter.db226d55c343637e1371fc247b144b51.svg",
+    "static/media/Star.svg": "/fresh-webside-react/static/media/Star.031a43391ef47ff7210b68dd6c91bc1f.svg",
+    "static/media/Blue.svg": "/fresh-webside-react/static/media/Blue.c70d5742bbd6f0564ae69bbbc423d435.svg",
+    "static/media/Orange.svg": "/fresh-webside-react/static/media/Orange.3baadd00c18dcafbd7db17e1f9fe794d.svg",
+    "static/media/Facebook.svg": "/fresh-webside-react/static/media/Facebook.4d4460260f64103d8da4a91d8e856d36.svg",
+    "static/media/Donut.svg": "/fresh-webside-react/static/media/Donut.b2c3429a3ebae75e57951c44029bc2ef.svg",
+    "static/media/OrangeDonut.svg": "/fresh-webside-react/static/media/OrangeDonut.abedb3c4353bf1949dce49f70af86869.svg",
+    "static/media/Arrow.svg": "/fresh-webside-react/static/media/Arrow.3fc95f25dee6e02d4e3c0a7a29642dba.svg",
+    "static/media/BlueCircle.svg": "/fresh-webside-react/static/media/BlueCircle.1dd6d0eeed17516f03ad15926480fc3d.svg",
+    "main.077ebecc.css.map": "/fresh-webside-react/static/css/main.077ebecc.css.map",
+    "main.a370bd41.js.map": "/fresh-webside-react/static/js/main.a370bd41.js.map",
     "787.b4be1a4c.chunk.js.map": "/fresh-webside-react/static/js/787.b4be1a4c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.46df895a.js"
+    "static/css/main.077ebecc.css",
+    "static/js/main.a370bd41.js"
   ]
 }
