@@ -20,17 +20,13 @@ const Heading = styled.div`
   line-height: 50px;
   color: #312477;
   text-align: center;
-  
+
   @media (min-width: 576px) {
     width: 600px;
     font-size: 35px;
     line-height: 52px;
   }
   @media (min-width: 1400px) {
-    font-size: 40px;
-    line-height: 57px;
-  }
-  @media (min-width: 2000px) {
     width: 845px;
     font-size: 50px;
     line-height: 67px;
