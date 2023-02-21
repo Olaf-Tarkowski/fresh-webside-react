@@ -20,6 +20,7 @@ const Heading = styled.div`
   line-height: 50px;
   color: #312477;
   text-align: center;
+  
   @media (min-width: 576px) {
     width: 600px;
     font-size: 35px;
@@ -53,8 +54,6 @@ const SmallSection = styled.section`
   flex-direction: column;
   align-items: center;
 `;
-
-
 
 function CardSlider() {
   return (
