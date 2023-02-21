@@ -5,7 +5,7 @@ import video from "../../resources/images/Video.png";
 import play from "../../resources/icons/Play.svg";
 import line from "../../resources/icons/Line.svg";
 import orange from "../../resources/icons/Orange.svg";
-import orangeDonut from "../../resources/icons/OrangeDonut.svg";
+import smallDonut from "../../resources/icons/SmallDonut.svg";
 import blue from "../../resources/icons/Blue.svg";
 
 const Background = styled.div`
@@ -173,12 +173,14 @@ const SvgLine = styled.img`
 const SvgSection = styled.div`
   position: relative;
 `;
-const OrangeDonutSvg = styled.img`
+const SmallDonutSvg = styled.img`
   width: 50px;
   height: auto;
   position: absolute;
   bottom: 0px;
   left: 100%;
+  filter: invert(64%) sepia(46%) saturate(3064%) hue-rotate(330deg)
+    brightness(100%) contrast(101%);
 
   @media (min-width: 768px) {
     width: 70px;
@@ -281,7 +283,7 @@ function NavBar() {
               </SmallContainer>
               <Image src={video} />
               <SvgSection>
-                <OrangeDonutSvg src={orangeDonut} />
+                <SmallDonutSvg src={smallDonut} />
                 <BlueSvg src={blue} />
                 <OrangeSvg src={orange} />
               </SvgSection>
