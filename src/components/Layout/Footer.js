@@ -1,4 +1,4 @@
-import { Col, Row } from "styled-bootstrap-grid";
+import { Col, Container, Row } from "styled-bootstrap-grid";
 import styled from "styled-components";
 import freshLogo from "../../resources/icons/Logo.svg";
 import donut from "../../resources/icons/Donut.svg";
@@ -10,12 +10,18 @@ import smartwww from "../../resources/icons/Smartwww.png";
 import arrow from "../../resources/icons/Arrow.svg";
 
 const NavyBlueBg = styled.div`
+  overflow: hidden;
   background-color: #312477;
   position: relative;
 `;
 
 const WhiteBg = styled.div`
+  overflow: hidden;
   background-color: #f8f7ff;
+`;
+
+const CustomContainer = styled(Container)`
+  max-width: 2400px;
 `;
 
 const DonutSvg = styled.img`
@@ -33,19 +39,44 @@ const OrangeSvg = styled.img`
 const SideWidth = styled.div`
   max-width: 1300px;
   margin: auto;
-  padding: 177px 0 133px;
+  padding: 137px 0 33px;
   color: white;
+
+  @media (min-width: 992px) {
+    padding: 177px 0 133px;
+  }
 `;
 
 const ContactSection = styled.section`
   margin-top: 92px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 992px) {
+    align-items: flex-start;
+  }
 `;
 
 const NavSection = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  padding-top: 20px;
+
+  @media (min-width: 992px) {
+    justify-content: flex-end;
+    padding-top: 0;
+  }
+`;
+
+const CompanySection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 992px) {
+    align-items: flex-start;
+  }
 `;
 
 const SmallSection = styled.section`
@@ -88,12 +119,12 @@ const Button = styled.button`
 `;
 
 const TelNumber = styled.a`
-text-decoration: none;
+  text-decoration: none;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 200;
   font-size: 30px;
   line-height: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
 `;
 
 const Mail = styled.a`
@@ -104,7 +135,7 @@ const Mail = styled.a`
 `;
 
 const SmallContainer = styled.div`
-position: relative;
+  position: relative;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -136,7 +167,7 @@ const StyledLink = styled.li`
   line-height: 32px;
   transition: 0.9s;
   :hover {
-    color:#61DDFE;
+    color: #61ddfe;
     text-decoration: underline;
     transform: scale(1.09);
     cursor: pointer;
@@ -146,9 +177,14 @@ const StyledLink = styled.li`
 const Svg = styled.img``;
 
 const SocialMediaSection = styled.div`
-  padding-top: 166px;
+  padding-top: 40px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+
+  @media (min-width: 992px) {
+    justify-content: flex-end;
+    padding-top: 166px;
+  }
 `;
 
 const Link = styled.a`
@@ -167,11 +203,11 @@ const SocialMediaSvg = styled.img`
 const Icon = styled.img``;
 
 const ArrowSvg = styled.img`
-position:absolute;
-right: -127px;
-width: 7px;
-height: 13px;
-transform: matrix(0, -1, 1, 0, 0, 0);
+  position: absolute;
+  right: -127px;
+  width: 7px;
+  height: 13px;
+  transform: matrix(0, -1, 1, 0, 0, 0);
 `;
 
 function Footer() {
@@ -179,67 +215,69 @@ function Footer() {
     <>
       <NavyBlueBg>
         <DonutSvg src={donut} />
-        <Row>
-          <Col lg={10} lgOffset={1}>
-            <SideWidth>
-              <Row>
-                <Col lg={4}>
+        <CustomContainer>
+          <SideWidth>
+            <Row>
+              <Col lg={4}>
+                <CompanySection>
                   <SmallSection>
                     <Svg src={freshLogo} />
                     <CompanyName>Fresh</CompanyName>
                   </SmallSection>
                   <WebisoText>Webiso Sp. J. Domiński, Maziarz</WebisoText>
                   <Button>Contact Us</Button>
-                </Col>
-                <Col lg={4}>
-                  <ContactSection>
-                    <TelNumber href="tel:+48 789 678 567">
-                      +48 789 678 567
-                    </TelNumber>
-                    <Mail href="mailto:office@fresh.com">office@fresh.com</Mail>
-                  </ContactSection>
-                </Col>
-                <Col lg={4}>
-                  <NavSection>
-                    <StyledList>
-                      <StyledLink>Home</StyledLink>
-                      <StyledLink>About Us</StyledLink>
-                      <StyledLink>Info</StyledLink>
-                    </StyledList>
-                    <StyledList>
-                      <StyledLink>Gallery</StyledLink>
-                      <StyledLink>FAQ</StyledLink>
-                      <StyledLink>Review</StyledLink>
-                    </StyledList>
-                  </NavSection>
-                  <SocialMediaSection>
-                    <Link href="https://www.facebook.com/">
-                      <SocialMediaSvg src={facebook} />
-                    </Link>
-                    <Link href="https://twitter.com/">
-                      <SocialMediaSvg src={twitter} />
-                    </Link>
-                    <Link href="https://www.instagram.com/">
-                      <SocialMediaSvg src={instagram} />
-                    </Link>
-                  </SocialMediaSection>
-                  <OrangeSvg src={orange} />
-                </Col>
-              </Row>
-            </SideWidth>
-          </Col>
-        </Row>
+                </CompanySection>
+              </Col>
+              <Col lg={4}>
+                <ContactSection>
+                  <TelNumber href="tel:+48 789 678 567">
+                    +48 789 678 567
+                  </TelNumber>
+                  <Mail href="mailto:office@fresh.com">office@fresh.com</Mail>
+                </ContactSection>
+              </Col>
+              <Col lg={4}>
+                <NavSection>
+                  <StyledList>
+                    <StyledLink>Home</StyledLink>
+                    <StyledLink>About Us</StyledLink>
+                    <StyledLink>Info</StyledLink>
+                  </StyledList>
+                  <StyledList>
+                    <StyledLink>Gallery</StyledLink>
+                    <StyledLink>FAQ</StyledLink>
+                    <StyledLink>Review</StyledLink>
+                  </StyledList>
+                </NavSection>
+                <SocialMediaSection>
+                  <Link href="https://www.facebook.com/">
+                    <SocialMediaSvg src={facebook} />
+                  </Link>
+                  <Link href="https://twitter.com/">
+                    <SocialMediaSvg src={twitter} />
+                  </Link>
+                  <Link href="https://www.instagram.com/">
+                    <SocialMediaSvg src={instagram} />
+                  </Link>
+                </SocialMediaSection>
+                <OrangeSvg src={orange} />
+              </Col>
+            </Row>
+          </SideWidth>
+        </CustomContainer>
       </NavyBlueBg>
       <WhiteBg>
-        <Row>
-          <Col lg={10} lgOffset={1}>
-            <SmallContainer>
-              <Text>© 2021 Wszystkie prawa zastrzeżone</Text>
-              <Icon src={smartwww} />
-              <ArrowSvg src={arrow} />
-            </SmallContainer>
-          </Col>
-        </Row>
+        <CustomContainer>
+          <Row>
+            <Col lg={10} lgOffset={1}>
+              <SmallContainer>
+                <Text>© 2021 Wszystkie prawa zastrzeżone</Text>
+                <Icon src={smartwww} />
+                <ArrowSvg src={arrow} />
+              </SmallContainer>
+            </Col>
+          </Row>
+        </CustomContainer>
       </WhiteBg>
     </>
   );
