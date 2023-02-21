@@ -16,10 +16,24 @@ const Heading = styled.div`
   max-width: 845px;
   font-family: "Space Grotesk", sans-serif;
   font-weight: bold;
-  font-size: 50px;
-  line-height: 67px;
+  font-size: 30px;
+  line-height: 50px;
   color: #312477;
   text-align: center;
+  @media (min-width: 576px) {
+    width: 600px;
+    font-size: 35px;
+    line-height: 52px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 40px;
+    line-height: 57px;
+  }
+  @media (min-width: 2000px) {
+    width: 845px;
+    font-size: 50px;
+    line-height: 67px;
+  }
 `;
 
 const Line = styled.div`
