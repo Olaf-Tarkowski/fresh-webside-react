@@ -22,11 +22,11 @@ const Heading = styled.div`
   text-align: center;
 `;
 
-const Test = styled.div`
+const Line = styled.div`
   position: relative;
 `;
 
-const SvgLine = styled.img`
+const Svg = styled.img`
   width: 307px;
   height: 218px;
   position: absolute;
@@ -52,9 +52,9 @@ function CardSlider() {
               Lorem Ipsum is simply dummy text printing and typesetting
               industry.
             </Heading>
-            <Test>
-              <SvgLine src={line} />
-            </Test>
+            <Line>
+              <Svg src={line} />
+            </Line>
           </SmallSection>
           <Cards />
         </Container>
