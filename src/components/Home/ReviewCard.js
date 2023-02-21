@@ -3,6 +3,8 @@ import styled from "styled-components";
 import star from "../../resources/icons/Star.svg";
 import photo from "../../resources/images/Photo.png";
 import quote from "../../resources/icons/Quote.svg";
+import orange from "../../resources/icons/Orange.svg";
+import smallDonut from "../../resources/icons/SmallDonut.svg";
 
 const Background = styled.div`
   margin: 158px 0 159px;
@@ -117,6 +119,60 @@ const Quote = styled.img`
   }
 `;
 
+const OrangeSvg = styled.img`
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: -40px;
+  left: -100px;
+
+  @media (min-width: 768px) {
+    width: 70px;
+    height: auto;
+    left: -200px;
+  }
+  @media (min-width: 992px) {
+    width: 90px;
+    height: auto;
+    top: -20px;
+    left: -250px;
+  }
+  @media (min-width: 1500px) {
+    width: 116px;
+    height: auto;
+    left: -310px;
+  }
+`;
+
+const SmallDonutSvg = styled.img`
+  width: 50px;
+  height: auto;
+  position: absolute;
+  bottom: -15px;
+  right: 30px;
+  filter: invert(83%) sepia(9%) saturate(5625%) hue-rotate(165deg)
+    brightness(104%) contrast(99%);
+
+  @media (min-width: 768px) {
+    width: 70px;
+    height: auto;
+    bottom: -35px;
+    right: 0px;
+  }
+  @media (min-width: 992px) {
+    width: 100px;
+    height: auto;
+    bottom: -67px;
+    right: -46px;
+  }
+  @media (min-width: 1500px) {
+    width: 114px;
+    height: auto;
+    bottom: -80px;
+    right: -190px;
+  }
+`;
+
 const Person = styled.div`
   padding-left: 18px;
   font-size: 16px;
@@ -127,6 +183,10 @@ const Person = styled.div`
 
 const DotsSection = styled.div`
   display: flex;
+  padding-right: 130px;
+  @media (min-width: 1500px) {
+    padding: 0;
+  }
 `;
 
 const Dots = styled.div`
@@ -181,6 +241,8 @@ function ReviewCard() {
                   <Dots />
                 </DotsSection>
               </PersonSection>
+              <OrangeSvg src={orange} />
+              <SmallDonutSvg src={smallDonut} />
             </ContentContainer>
           </Col>
         </Row>
