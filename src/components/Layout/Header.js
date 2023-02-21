@@ -41,11 +41,11 @@ const TelNumber = styled.a`
 
 const Nav = styled.nav`
   display: flex;
-  align-items:center;
+  align-items: center;
   padding: 0 20px;
   color: #6d649d;
 
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     padding: 0 93.5px;
   }
 `;
@@ -57,20 +57,20 @@ const StyledList = styled.ul`
   display: flex;
   justify-content: space-between;
 
-  @media(min-width: 576px){
+  @media (min-width: 576px) {
     width: 232px;
   }
 `;
 
 const StyledLink = styled.li`
-padding: 0 5px;
+  padding: 0 5px;
   transition: 0.9s;
   :hover {
     transform: scale(1.09);
     cursor: pointer;
   }
 
-  @media(min-width: 576px){
+  @media (min-width: 576px) {
     padding: 0;
   }
 `;
