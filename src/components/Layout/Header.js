@@ -8,7 +8,7 @@ const Background = styled.div`
 `;
 
 const CustomContainer = styled(Container)`
-  max-width: 1608px;
+  max-width: 2400px;
 `;
 
 const ContentContainer = styled.div`
