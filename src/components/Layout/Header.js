@@ -1,4 +1,4 @@
-import { Col, Row } from "styled-bootstrap-grid";
+import { Col, Container, Row } from "styled-bootstrap-grid";
 import styled from "styled-components";
 import envelope from "../../resources/icons/Envelope.svg";
 import telMes from "../../resources/icons/TelMes.svg";
@@ -7,7 +7,11 @@ const Background = styled.div`
   background-color: #291d65;
 `;
 
-const Container = styled.div`
+const CustomContainer = styled(Container)`
+  max-width: 1608px;
+`;
+
+const ContentContainer = styled.div`
   margin: auto;
   display: flex;
   align-items: center;
@@ -17,6 +21,11 @@ const Container = styled.div`
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 200;
   font-size: 14px;
+`;
+
+const Position = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const Mail = styled.a`
@@ -31,24 +40,38 @@ const TelNumber = styled.a`
 `;
 
 const Nav = styled.nav`
-  padding: 0 93.5px;
+  display: flex;
+  align-items:center;
+  padding: 0 20px;
   color: #6d649d;
+
+  @media(min-width: 768px){
+    padding: 0 93.5px;
+  }
 `;
 
 const StyledList = styled.ul`
   margin: 0;
   padding: 0;
-  width: 232px;
   list-style: none;
   display: flex;
   justify-content: space-between;
+
+  @media(min-width: 576px){
+    width: 232px;
+  }
 `;
 
 const StyledLink = styled.li`
+padding: 0 5px;
   transition: 0.9s;
   :hover {
     transform: scale(1.09);
     cursor: pointer;
+  }
+
+  @media(min-width: 576px){
+    padding: 0;
   }
 `;
 
@@ -61,31 +84,33 @@ const SmallSection = styled.section`
 function Header() {
   return (
     <Background>
-      <Row>
-        <Col lg={10} lgOffset={1}>
-          <Container>
-            <div>
-              <Svg src={envelope} />
-              <Mail href="mailto:office@fresh.com">office@fresh.com</Mail>
-            </div>
-            <SmallSection>
-              <Nav>
-                <StyledList>
-                  <StyledLink>About Us</StyledLink>
-                  <StyledLink>Information</StyledLink>
-                  <StyledLink>Contact</StyledLink>
-                </StyledList>
-              </Nav>
-              <div>
-                <Svg src={telMes} />
-                <TelNumber href="tel:+48 789 678 567">
-                  +48 789 678 567
-                </TelNumber>
-              </div>
-            </SmallSection>
-          </Container>
-        </Col>
-      </Row>
+      <CustomContainer>
+        <Row>
+          <Col lg={10} lgOffset={1}>
+            <ContentContainer>
+              <Position>
+                <Svg src={envelope} />
+                <Mail href="mailto:office@fresh.com">office@fresh.com</Mail>
+              </Position>
+              <SmallSection>
+                <Nav>
+                  <StyledList>
+                    <StyledLink>About Us</StyledLink>
+                    <StyledLink>Information</StyledLink>
+                    <StyledLink>Contact</StyledLink>
+                  </StyledList>
+                </Nav>
+                <Position>
+                  <Svg src={telMes} />
+                  <TelNumber href="tel:+48 789 678 567">
+                    +48 789 678 567
+                  </TelNumber>
+                </Position>
+              </SmallSection>
+            </ContentContainer>
+          </Col>
+        </Row>
+      </CustomContainer>
     </Background>
   );
 }
