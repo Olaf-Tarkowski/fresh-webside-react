@@ -1,4 +1,4 @@
-import { Col, Row } from "styled-bootstrap-grid";
+import { Col, Container, Row } from "styled-bootstrap-grid";
 import styled from "styled-components";
 import star from "../../resources/icons/Star.svg";
 import photo from "../../resources/images/Photo.png";
@@ -9,7 +9,11 @@ const Background = styled.div`
   background-color: #f8f7ff;
 `;
 
-const Container = styled.div`
+const CustomContainer = styled(Container)`
+  max-width: 2400px;
+`;
+
+const ContentContainer = styled.div`
   position: relative;
   max-width: 961px;
   margin: auto;
@@ -31,12 +35,27 @@ const Rating = styled.div`
 
 const Text = styled.div`
   margin-top: 91px;
-  max-width: 961px;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
-  line-height: 60px;
+  line-height: 50px;
   color: #312477;
+
+  @media (min-width: 768px) {
+    width: 670px;
+    font-size: 35px;
+    line-height: 52px;
+  }
+  @media (min-width: 1400px) {
+    width: 765px;
+    font-size: 40px;
+    line-height: 57px;
+  }
+  @media (min-width: 1600px) {
+    width: 961px;
+    font-size: 50px;
+    line-height: 67px;
+  }
 `;
 
 const StarSvg = styled.img`
@@ -71,12 +90,31 @@ const Quote = styled.img`
   z-index: -1;
   position: absolute;
   opacity: 0.51;
-  width: 534px;
-  height: 419px;
-  bottom: 30px;
-  right: -195px;
+  width: 300px;
+  height: auto;
+  bottom: 154px;
+  right: 6px;
   filter: invert(93%) sepia(100%) saturate(29%) hue-rotate(56deg)
     brightness(107%) contrast(109%);
+
+  @media (min-width: 576px) {
+    width: 380px;
+    height: auto;
+    bottom: 100px;
+    right: 6px;
+  }
+  @media (min-width: 1400px) {
+    width: 450px;
+    height: auto;
+    bottom: 87px;
+    right: -118px;
+  }
+  @media (min-width: 1600px) {
+    width: 534px;
+    height: auto;
+    bottom: 30px;
+    right: -195px;
+  }
 `;
 
 const Person = styled.div`
@@ -112,39 +150,41 @@ const Dot = styled.div`
 function ReviewCard() {
   return (
     <Background>
-      <Row>
-        <Col lg={10} lgOffset={1}>
-          <Container>
-            <SmallSection>
-              <Rating>Średnia ocena: 5.0</Rating>
-              <div>
-                {[...Array(5)].map((_, i) => (
-                  <StarSvg key={i} src={star} />
-                ))}
-              </div>
-            </SmallSection>
-            <Text>
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000...
-            </Text>
-            <SmallQuote src={quote} />
-            <Quote src={quote} />
-            <PersonSection>
-              <Box>
-                <Image src={photo} />
-                <Person>Jan Kowalski,&nbsp;</Person>
-                Grupa Kraków
-              </Box>
-              <DotsSection>
-                <Dots />
-                <Dot />
-                <Dots />
-              </DotsSection>
-            </PersonSection>
-          </Container>
-        </Col>
-      </Row>
+      <CustomContainer>
+        <Row>
+          <Col lg={10} lgOffset={1}>
+            <ContentContainer>
+              <SmallSection>
+                <Rating>Średnia ocena: 5.0</Rating>
+                <div>
+                  {[...Array(5)].map((_, i) => (
+                    <StarSvg key={i} src={star} />
+                  ))}
+                </div>
+              </SmallSection>
+              <Text>
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC, making it over 2000...
+              </Text>
+              <SmallQuote src={quote} />
+              <Quote src={quote} />
+              <PersonSection>
+                <Box>
+                  <Image src={photo} />
+                  <Person>Jan Kowalski,&nbsp;</Person>
+                  Grupa Kraków
+                </Box>
+                <DotsSection>
+                  <Dots />
+                  <Dot />
+                  <Dots />
+                </DotsSection>
+              </PersonSection>
+            </ContentContainer>
+          </Col>
+        </Row>
+      </CustomContainer>
     </Background>
   );
 }
