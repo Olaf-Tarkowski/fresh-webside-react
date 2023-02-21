@@ -7,7 +7,7 @@ import phone from "../../resources/icons/Phone.svg";
 import coffee from "../../resources/icons/Coffee.svg";
 import note from "../../resources/icons/Note.svg";
 import blueCircle from "../../resources/icons/BlueCircle.svg";
-import Arrow from "../../resources/icons/Arrow.svg";
+import arrow from "../../resources/icons/Arrow.svg";
 
 const SliderWrapper = styled.div`
   width: 100%;
@@ -143,7 +143,7 @@ const Cards = () => {
           </Text>
           <LinkSection>
             <Link>Read more</Link>
-            <Svg src={Arrow} />
+            <Svg src={arrow} />
           </LinkSection>
         </Card>
         <Card>
@@ -159,7 +159,7 @@ const Cards = () => {
           </Text>
           <LinkSection>
             <Link>Read more</Link>
-            <Svg src={Arrow} />
+            <Svg src={arrow} />
           </LinkSection>
         </Card>
         <Card>
@@ -175,7 +175,7 @@ const Cards = () => {
           </Text>
           <LinkSection>
             <Link>Read more</Link>
-            <Svg src={Arrow} />
+            <Svg src={arrow} />
           </LinkSection>
         </Card>
         <Card>
@@ -191,7 +191,7 @@ const Cards = () => {
           </Text>
           <LinkSection>
             <Link>Read more</Link>
-            <Svg src={Arrow} />
+            <Svg src={arrow} />
           </LinkSection>
         </Card>
       </Slide>
