@@ -1,5 +1,5 @@
 import CardSlider from "./components/Home/CardSlider";
-import Hero from "./components/Home/Hero";
+import ReviewCard from "./components/Home/ReviewCard";
 import InfoCards from "./components/Home/InfoCards";
 import NavBar from "./components/Home/NavBar";
 import Footer from "./components/Layout/Footer";
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <NavBar />
       <CardSlider />
-      <Hero />
+      <ReviewCard />
       <InfoCards />
       <Footer/>
     </>
